@@ -13,7 +13,7 @@ class TChipTheme {
     deleteIconColor: Colors.black,
     disabledColor: Colors.grey.withOpacity(0.4),
     checkmarkColor: Colors.white,
-    labelPadding: EdgeInsets.symmetric(horizontal: 8),
+    labelPadding: const EdgeInsets.symmetric(horizontal: 8),
     labelStyle: const TextStyle(
       color: Colors.black,
       fontSize: 14,

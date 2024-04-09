@@ -28,6 +28,10 @@ class THelperFunctions {
       return Colors.black;
     } else if (value == 'White') {
       return Colors.white;
+    } else if (value == 'Teal') {
+      return Colors.teal;
+    } else if (value == 'Indigo') {
+      return Colors.indigo;
     } else {
       return Colors.transparent;
     }
