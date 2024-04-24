@@ -44,6 +44,31 @@ class TDeviceUtils {
     return MediaQuery.of(context).orientation == Orientation.portrait;
   }
 
+  static double getScreenWidth(BuildContext context) {
+    return MediaQuery.of(context).size.width;
+  }
+
+  static double getScreenHeight(BuildContext context) {
+    return MediaQuery.of(context).size.height;
+  }
+
+  static double getScreenHeightWithoutStatusBar(BuildContext context) {
+    return MediaQuery.of(context).size.height - getStatusBarHeight(context);
+  }
+
+  static double getStatusBarHeight(BuildContext context) {
+    return MediaQuery.of(context).padding.top;
+  }
+
+  static double getNavigationBarHeight(BuildContext context) {
+    return MediaQuery.of(context).padding.bottom;
+  }
+
+// pixel ratio
+  static double getPixelRatio(BuildContext context) {
+    return MediaQuery.of(context).devicePixelRatio;
+  }
+
   static Future<void> setNavigationBarColor(BuildContext context,
       {Color? color}) async {
     await Future.delayed(const Duration(milliseconds: 100));

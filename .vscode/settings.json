@@ -1,4 +1,5 @@
 {
   "java.import.gradle.wrapper.enabled": true,
-  "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "cSpell.words": ["Iconsax"]
 }
