@@ -78,4 +78,5 @@ class TImages {
   static const String promoBanner2 = 'assets/images/centre-table.jpg';
   static const String promoBanner3 = 'assets/images/chair-3.jpg';
   static const String avatar = 'assets/images/avatar-2.jpg';
+  static const String profileImage = 'assets/images/people_4.jpg';
 }
