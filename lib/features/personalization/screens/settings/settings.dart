@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_stuffs_2024/features/personalization/screens/address/user_address.dart';
 import 'package:flutter_stuffs_2024/features/personalization/screens/profile/profile.dart';
 import 'package:flutter_stuffs_2024/shared/widgets/appbar/app_bar.dart';
 import 'package:flutter_stuffs_2024/shared/widgets/custom_shapes/containers/primary_header_container.dart';
@@ -54,7 +55,9 @@ class SettingsScreen extends StatelessWidget {
                     icon: Icons.home_work,
                     title: 'My Addresses',
                     subtitle: 'Set shopping delivery addresses',
-                    onTap: () {},
+                    onTap: () {
+                      Get.to(() => const UserAddressScreen());
+                    },
                   ),
                   TSettingsMenuTile(
                     icon: Icons.shop,
