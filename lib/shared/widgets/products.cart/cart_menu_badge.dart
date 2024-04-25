@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_stuffs_2024/features/shop/screens/cart/cart.dart';
 import 'package:flutter_stuffs_2024/utils/constants/colors.dart';
+import 'package:get/get.dart';
 
 class TCartCounterBadge extends StatelessWidget {
   const TCartCounterBadge({
@@ -15,7 +17,7 @@ class TCartCounterBadge extends StatelessWidget {
       children: [
         IconButton(
           icon: Icon(Icons.shopping_cart, color: iconColor),
-          onPressed: onPressed,
+          onPressed: () => Get.to(() => const CartScreen()),
         ),
         Positioned(
           top: 4.0,
